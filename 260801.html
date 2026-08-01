@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function aa() {
+        // console.log(arguments);
+        for (let i = 0; i < arguments.length; i++) {
+          console.log(arguments[i]);
+        }
+      }
+      aa(1, 2, 3, 4, "aaabb");
+      function getName(name) {
+        return "KIM " + name;
+      }
+      console.log(getName("DO WAN"));
+      let bbb = (name) => {
+        return "KIM " + name;
+      };
+      console.log(bbb("DOWAN"));
+    </script>
+  </head>
+  <body></body>
+</html>
