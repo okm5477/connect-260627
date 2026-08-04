@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>셋타임아웃</title>
+    <script>
+      function go() {
+        window.setTimeout(() => {
+          document.querySelector(".aa").innerHTML =
+            document.querySelector(".aa").innerHTML + "gogo";
+        }, 2000);
+      }
+      let cnt = 0;
+      window.setInterval(() => {
+        cnt++;
+        document.querySelector(".aa").innerHTML = "헬로우데얼!" + cnt + "s";
+      }, 1000);
+      function qqq() {
+        console.log(arguments);
+      }
+      qqq(1, 2, 3, 4, "a", "ccc");
+    </script>
+  </head>
+  <body>
+    <h1 class="aa">헬로우데얼!!!</h1>
+  </body>
+</html>
